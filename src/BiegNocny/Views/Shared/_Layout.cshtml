@@ -2,14 +2,49 @@
 <html>
 <head>
     <title>Panel Administracyjny - @ViewBag.Title</title>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/bootswatch/superhero/bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/css/layout.css" />
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" asp-controller="App" asp-action="Index">Bieg Nocny</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a asp-controller="App" asp-action="Index">Aktualności</a>
+                    </li>
+                    <li>
+                        <a asp-controller="App" asp-action="AddPoint">Dodaj Punkt</a>
+                    </li>
+                    <li>
+                        <a asp-controller="App" asp-action="ViewPoints">Trasa</a>
+                    </li>
+                    <li>
+                        <a asp-controller="App" asp-action="Map">Mapa</a>
+                    </li>
+                    <li>
+                        <a asp-controller="App" asp-action="Users">Użytkownicy</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a asp-controller="App" asp-action="Index">Wyloguj</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+            @RenderBody()
+    </div>
 </body>
 </html>
