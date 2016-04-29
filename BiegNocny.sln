@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C8418C7D-D8BE-448A-A033-5C379D84862E}"
+	ProjectSection(SolutionItems) = preProject
+		src\BiegNocny\bower.json = src\BiegNocny\bower.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9FAF280E-12B8-4A19-86E4-71B5E74A0F66}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BiegNocny", "src\BiegNocny\BiegNocny.xproj", "{8A8CE0BC-FDF9-4335-880C-9F5E7B7AAF9B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A8CE0BC-FDF9-4335-880C-9F5E7B7AAF9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A8CE0BC-FDF9-4335-880C-9F5E7B7AAF9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A8CE0BC-FDF9-4335-880C-9F5E7B7AAF9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A8CE0BC-FDF9-4335-880C-9F5E7B7AAF9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A8CE0BC-FDF9-4335-880C-9F5E7B7AAF9B} = {C8418C7D-D8BE-448A-A033-5C379D84862E}
+	EndGlobalSection
+EndGlobal
