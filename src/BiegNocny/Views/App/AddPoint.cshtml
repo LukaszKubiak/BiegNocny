@@ -2,7 +2,7 @@
     <div class="page-header">
         <h1 class="text-primary">Nowy punkt</h1>
     </div>
-    <div class="row">
+    <div id="AddPointForm" class="row">
         <div class="col-lg-6">
             <div class="form-horizontal">
                 <fieldset>
@@ -76,11 +76,19 @@
                             <input type="number" class="form-control" id="Long" placeholder="Długość Geograficzna" />
                         </div>
                     </div>
+                    <div class="form-group">
+                        <div class="col-lg-2 col-lg-offset-3">
+                            <button id="Upload" type="reset" class="btn btn-warning" >Wyczyść</button>
+                        </div>
+                        <div class="col-lg-2 col-lg-offset-2"><button id="Upload" type="submit" class="btn btn-success">Zapisz</button></div>
+                    </div>
                 </fieldset>
             </div>
         </div>
-        <div class="col-lg-6">
+        <div id="MapDiv" class="col-lg-6" style="align-items:flex-end">
+            <div id="map">
 
+            </div>
         </div>
     </div>
 </div>

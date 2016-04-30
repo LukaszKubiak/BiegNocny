@@ -5,6 +5,8 @@
     "jquery": "~2.2.3",
     "bootstrap": "~3.3.6",
     "bootswatch": "3.3.6+1",
-    "font-awesome": "~4.6.1"
+    "font-awesome": "~4.6.1",
+    "cloudinary": "~2.0.8",
+    "travelmap": "~1.0.2"
   }
 }
