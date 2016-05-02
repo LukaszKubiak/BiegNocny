@@ -15,8 +15,13 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" asp-controller="App" asp-action="Index">Bieg Nocny</a>
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-            <div class="navbar-collapse collapse">
+            <div class="navbar-collapse collapse" id="navbar-main" aria-expanded="false">
                 <ul class="nav navbar-nav">
                     <li>
                         <a asp-controller="App" asp-action="Index">Aktualności</a>
@@ -45,17 +50,13 @@
     <div class="container">
             @RenderBody()
     </div>
-
+    
     <script type="text/javascript" src="~/lib/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="~/lib/jquery.ui/ui/widget.js"></script>
-    <script type="text/javascript" src="~/lib/blueimp-file-upload/js/jquery.iframe-transport.js"></script>
-    <script type="text/javascript" src="~/lib/blueimp-file-upload/js/jquery.fileupload.js"></script>
-    <script type="text/javascript" src="~/lib/cloudinary/js/jquery.cloudinary.js"></script>
-    <script type="text/javascript" src="~/lib/travelmap/travelmap.min.js"></script>
     <script type="text/javascript" src="~/lib/gmaps/gmaps.min.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLFqrssxjotmqcdFO75ZQMdMGr9IhsQDs"></script>
-    <script type="text/javascript" src="~/js/site.js"></script>
+    @RenderSection("Scripts", false)
 
 </body>
 </html>

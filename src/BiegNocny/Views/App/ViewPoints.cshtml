@@ -1,0 +1,113 @@
+﻿@section Scripts{
+    <script type="text/javascript" src="~/js/ViewPoints.js"></script>
+}
+<div class="bs-docs-section">
+    <div class="page-header">
+        <h1 class="text-primary">Nowy punkt</h1>
+    </div>
+    <div id="ViewForm" class="row">
+        <div class="col-md-6">
+            <form class="form-horizontal">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="ViewLine" class="col-md-12 control-label" style="text-align:left">Trasa</label>
+                        <div class="col-md-12">
+                            <select class="form-control" id="ViewLine">
+                                <option></option>
+                                <option>Trasa Starszoharcerska</option>
+                                <option>Trasa Wędrownicza</option>
+                                <option>Trasa Rowerowa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="ViewNumberWrapper" style="display:none">
+                        <div class="form-group">
+                            <label for="ViewPointNr" class="col-md-12 control-label" style="text-align:left">Numer Punktu</label>
+                            <div class="col-md-12">
+                                <select class="form-control" id="ViewPointNr" placeholder="Numer Punktu">
+                                    <option></option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>c
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ViewWrapper" style="display:none">
+                        <div class="form-group">
+                            <label for="ViewName" class="col-md-12 control-label" style="text-align:left">Nazwa Punktu</label>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" id="ViewName" placeholder="Nazwa Punktu" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ViewDesc" class="col-md-12 control-label" style="text-align:left">Opis</label>
+                            <div class="col-md-12">
+                                <textarea class="form-control" rows="6" id="ViewDesc" placeholder="Opis"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ViewQuestion" class="col-md-12 control-label" style="text-align:left">Pytanie</label>
+                            <div class="col-md-12">
+                                <textarea class="form-control" rows="2" id="ViewQuestion" placeholder="Pytanie"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" style="text-align:left">Dojście do następnego punktu</label>
+                            <div class="col-md-6">
+                                <label>
+                                    <input type="radio" name="ViewoptionsRadios" id="Viewradio1" value="option1" />
+                                    Tekst
+                                </label>
+                            </div>
+                            <div class="col-md-6">
+                                <label>
+                                    <input type="radio" name="ViewoptionsRadios" id="Viewradio2" value="option2" />
+                                    Obraz
+                                </label>
+                            </div>
+                            <div id="ViewText" class="col-md-12" style="display:none">
+                                <textarea class="form-control" rows="2" id="ViewNextPoint" placeholder="Następny punkt"></textarea>
+                            </div>
+                            <div id="ViewNextPointBtn" class="col-md-12" style="display:none">
+                                <button id="ViewUpload" type="button" class="btn btn-primary" style="margin-top:3px;margin-bottom:10px">Dodaj Obraz</button>
+                            </div>
+                            <div id="ViewNextPointImg" class="col-md-12">
+                                <img id="ViewPointImg" style="display:none" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ViewLat" class="col-md-12 control-label" style="text-align:left">Szerekość Geograficzna</label>
+                            <div class="col-md-12">
+                                <input type="number" class="form-control" id="ViewLat" placeholder="Szerekość Geograficzna" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ViewLong" class="col-md-12 control-label" style="text-align:left">Długość Geograficzna</label>
+                            <div class="col-md-12">
+                                <input type="number" class="form-control" id="ViewLong" placeholder="Długość Geograficzna" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2 col-md-offset-3">
+                                <button id="ViewReset" type="button" class="btn btn-warning">Anuluj</button>
+                            </div>
+                            <div class="col-md-2 col-md-offset-2">
+                                <button id="ViewUpload" type="submit" class="btn btn-success">Zapisz</button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div id="ViewMapDiv" class="col-md-6">
+            <div id="ViewMap">
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
